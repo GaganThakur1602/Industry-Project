@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="UTF-8" />
+	<title>Media Queries</title>
+    <style type="text/css">
+        .container{
+            background-color:brown;
+            font-size: 50px;
+            color:white;
+            display: none;
+
+
+        }
+        @media (max-width:300px) {
+            #box1{
+            background-color:yellow;
+            font-size: 50px;
+            color:black;
+            display: block;
+
+            }
+        }
+        @media (min-width:300px) and (max-width:500px){
+            #box2{
+                background-color:red;
+                font-size: 50px;
+                color:white;
+                display: block;
+                }
+            }
+        @media (min-width:500px) and (max-width:800px){
+            #box3{
+                background-color:green;
+                font-size: 50px;
+                color:black;
+                display: block;
+                }
+        }
+        @media (min-width:800px){
+            #box4{
+                background-color:violet;
+                font-size: 50px;
+                color:whitesmoke;
+                display: block;
+                }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="box1">This is a Smartphone device</div>
+    <div class="container" id="box2">This is a Tablet</div>
+    <div class="container" id="box3">This is a computer</div>
+    <div class="container" id="box4">This is a television</div>
+
+	
+</body>
+</html>
